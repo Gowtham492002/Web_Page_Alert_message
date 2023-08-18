@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: bold;
+            background-color: black;
+            font-size: 50px;
+
+        }
+        body{
+            background-image: url(Apex_bkg.png);
+            background-position: center;
+            background-attachment: fixed;
+            
+            
+        }
+        
+        
+    </style>
+
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 >
+            Apex legends
+        </h1>
+
+    <script>
+        function validate(){
+            if(document.myform.fname.value==""){
+                alert("Username cannot be empty")
+                document.myform.fname.focus()
+                return false
+            }
+                
+            else if(document.myform.email.value==""){
+                alert("Email ID cannot be empty")
+                document.myform.fname.focus()
+                return false
+
+            }
+            else{
+                return true
+            }
+        }
+    </script>
+
+        
+
+        <form name=myform action="#" onsubmit="return(validate())">
+            <label for="fname">Username Name:</label>
+            <input type="text" name="fname" id="fname" >
+            <br><br>
+
+            
+
+            <label for="email">Email Id:</label>
+            <input type="email" name="email" id="email" >
+            <br><br>
+
+            <button type="submit" type="submit" >submit</button>
+        </form>
+    </center>
+</body>
+
+</html>
